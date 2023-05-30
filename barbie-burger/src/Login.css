@@ -1,0 +1,100 @@
+@import url( ' https://fonts.cdnfonts.com/css/barbie ' );
+@import url('https://fonts.googleapis.com/css2?family=Bellota&display=swap');
+
+.Logo-header{
+  display:flex;
+  flex-direction: row;  
+ }
+
+.Logo {
+  display: flex;
+  flex-direction: column;
+ }
+
+.Forms{
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.texto-Login{
+  margin:13px;
+}
+
+.input-Login{
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #FACDE5; 
+  border: none;
+}
+input::placeholder{
+  color:#E0218A;
+  font-size: 20px; 
+  font-weight:bolder;
+  font-family: 'Bellota', cursive;  
+}
+
+.button-Entrar{
+  margin: 5px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px; 
+  border: white solid;
+  background-color:#ED5C9B;
+  color: white;
+  font-size: 20px;
+  font-weight:bolder;
+  font-family: 'Bellota', cursive;    
+}
+
+.texto-cadastre{
+  margin:10px;
+  margin-top: 50px; 
+}
+
+.cadastre{
+  margin: 5px;
+  width: 150px;
+  height: 50px;
+  border: white solid; 
+  border-radius: 15px;  
+  background-color:#ED5C9B;
+  color: white;
+  font-size: 20px;
+  font-weight:bolder;
+  font-family: 'Bellota', cursive;  
+}
+
+ .nomeBarbie{
+  width: 500px;
+  height: 200px;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 180px;
+  position: absolute;
+ }
+
+.hamburguer{
+  width: 650px;
+  height: 400px;
+  pointer-events: none;
+  flex-direction: column;
+ margin-left: 120px;
+ position: relative;
+ margin-top: 210px;
+
+}
+.nomeBurgers{
+  width: 600px;
+  height: 300px;
+  flex-direction: column;
+  margin-top: -140px;
+  margin-left: 120px;
+}
+
+

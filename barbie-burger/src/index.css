@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+ padding: 0;
+ background-color:#E0218A ;
+ font-family: 'Bellota', cursive;
+  font-size: 30px;
+  color:white;
+}
+
+/* code {
+  
+} */
