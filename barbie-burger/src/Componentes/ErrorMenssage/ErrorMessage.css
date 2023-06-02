@@ -1,0 +1,15 @@
+.error-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 20px;
+  margin: auto;
+}
+
+.message {
+  text-align: center;
+  color:white;
+  font-size: 100px;
+}
+

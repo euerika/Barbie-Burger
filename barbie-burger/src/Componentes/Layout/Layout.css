@@ -1,0 +1,55 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  margin-left: 140px;
+
+    
+}
+.pai{
+  display: flex;
+}
+
+.form-title{
+  margin-left: 100px;  
+
+}
+
+.nomeBarbie{
+  width: 500px;
+  height: 200px;
+  flex-direction: column;  
+  margin-left: 150px;
+  position: absolute;
+  margin-top: -100;
+  
+}
+.hamburguer{
+  width: 650px;
+  height: 400px;
+  pointer-events: none;
+  flex-direction: column;
+  margin-left: 90px;
+  position: relative;
+  margin-top: 110px;
+  bottom: 10px;
+}
+.nomeburgers{
+  width: 600px;
+  height: 300px;
+  flex-direction: column;
+  margin-top: -150px;
+  margin-left: 90px;
+}
+
+.text-link{ 
+  margin-left: 60px;
+}
+.text-span{
+  margin-left: 30px;
+}
+
+.errormessage{
+  font-size: 100px;
+}
