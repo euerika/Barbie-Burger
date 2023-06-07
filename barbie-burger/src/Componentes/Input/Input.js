@@ -1,6 +1,6 @@
 import "../../../src/Componentes/Input/Input.css";
 
-export const InputElement = ({
+export const CampoTexto = ({
   type,
   value,
   name,
@@ -27,5 +27,6 @@ export const InputElement = ({
         />
       </div>
     </>
-  );
-};
+  )
+}
+
