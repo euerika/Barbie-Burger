@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../../Componentes/Botão/Botao"; //ok
-import { InputElement } from "../../Componentes/Input/Input"; //ok
+import { CampoTexto } from "../../Componentes/Input/Input"; //ok
 import { LoginError } from "../../API/Erro"; //ok
 import { setRole, setToken } from "../../API/ArmazenamentoLocal"; //ok
 import { loginUsuario } from "../../API/Api"; //ok
-import { LayoutForm } from "../../../src/Componentes/Layout/Layout"; //ok
+import { LayoutForm } from "../../Componentes/Layout/Layout"; //ok
 import { ErrorMessage } from "../../Componentes/ErrorMenssage/ErrorMessage"; //criar
 //import { hideErrorMessage } from "../../helper";
 import LogoHamburger from "../../../src/imagem/hamb.png"; //ok
@@ -42,21 +42,24 @@ export const Login = () => {
   return (
     <>
       <LayoutForm>
-        <div class="pai">
+        <div className="pai">
           <form className="container-form">
-            <h2 className="form-title">Login</h2>
-            <InputElement
+            <h2 className="form-title">Conecte-se</h2>
+            
+            <CampoTexto
               type="email"
+              label="Email"
               value={email}
               name="input"
-              placeholder="E-mail"
+              // placeholder="email@email.com"
               onChange={(e) => setEmail(e.target.value)}
             />
-            <InputElement
+            <CampoTexto
               type="password"
+              label="Senha"
               value={password}
               name="input"
-              placeholder="Senha"
+              // placeholder="Senha"
               onChange={(e) => setPassword(e.target.value)}
             />
             <ErrorMessage             
@@ -73,12 +76,14 @@ export const Login = () => {
           </form>
 
           <picture className="imgs">
-            <img className="nomeBarbie" src={Barbie} alt="logo" />
-            <img className="hamburguer" src={LogoHamburger} alt="logo" />
-            <img className="nomeburgers" src={Burgers} alt="logo" />
+            <img className="nomeBarbie" src={Barbie} alt="Logo nome Barbie" />
+            <img className="hamburguer" src={LogoHamburger} alt="Logo hambúrguer" />
+            <img className="nomeburgers" src={Burgers} alt="Logo nome Burgers" />
           </picture>
         </div>
       </LayoutForm>
     </>
-  );
-};
+  )
+}
+
+export default Login;

@@ -6,16 +6,27 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "babel": "^6.23.0",
+    "babel-install": "^2.1.0",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "esbuild": "^0.17.19",
+    "eslint": "^8.42.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "fetch-mock": "^9.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "react-router-dom": "^6.11.2"
+    "vite": "^4.3.9",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --verbose --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +46,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^29.5.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1",
+    "jest-css-modules-transform": "^4.4.2",
+    "jest-environment-jsdom": "^27.5.1",
+    "jest-fetch-mock": "^3.0.3"
   }
 }
