@@ -24,7 +24,7 @@ export const LoginError = ({status}) => {
   }
 };
 
-export const CreateOrderError = ({status}) => {
+export const CriarOrdemErro = ({status}) => {
   switch (status) {
     case 400:
       return "Preencha os dados obrigatórios";

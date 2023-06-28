@@ -1,12 +1,12 @@
-//import React from 'react';
-import { TodasAsRotas } from './Rotas/Rotas';
+// //import React from 'react';
+// import { TodasAsRotas } from './Rotas/Rotas';
 
-function App( ) {
-  return (
-    <>
-    <TodasAsRotas />
-    </>
-  );
-}
+// function App( ) {
+//   return (
+//     <>
+//     <TodasAsRotas />
+//     </>
+//   );
+// }
 
-export default App;
+// export default App;
