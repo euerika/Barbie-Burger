@@ -16,4 +16,19 @@ export const Button = ({
   );
 };
 
-export default Button;
+export const ButtonMenu = ({
+  children,
+  onClick,
+  classNameContainer = "button-container",
+  className = "button-menu",
+  ...props
+}) => {
+  return (
+    <div className={classNameContainer}>
+      <button className={className} onClick={onClick} {...props}>
+        {children}
+      </button>
+    </div>
+  );
+};
+

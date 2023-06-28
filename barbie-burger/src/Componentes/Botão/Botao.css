@@ -22,3 +22,14 @@
   font-weight:bolder;
   font-family: 'Bellota', cursive;
 }
+
+.button-menu{
+  width: 98%;
+  background-color: #ED5C9B;
+  border-radius: 15px;
+  color: white;
+  font-family:'Bellota', cursive;
+  border: none;
+
+  
+}

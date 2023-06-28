@@ -1,0 +1,24 @@
+.item-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  color: var(--black-bean);
+  font-size: 20px;
+  color: #E0218A;
+  font-weight: bold ;
+  margin: 10px;
+}
+
+
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+
+.trash-can {
+  background-color: transparent;
+  border: none;
+}

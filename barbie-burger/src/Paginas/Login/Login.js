@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "../../Componentes/Botão/Botao"; //ok
-import { CampoTexto } from "../../Componentes/Input/Input"; //ok
+import { Button } from "../../Componentes/Botão/Botao"; 
+import { CampoTexto } from "../../Componentes/Input/Input"; 
 import { LoginError } from "../../API/Erro"; //ok
-import { setRole, setToken } from "../../API/ArmazenamentoLocal"; //ok
+// import { setRole } from "../../API/ArmazenamentoLocal"; //
 import { loginUsuario } from "../../API/Api"; //ok
 import { LayoutForm } from "../../Componentes/Layout/Layout"; //ok
 import { ErrorMessage } from "../../Componentes/ErrorMenssage/ErrorMessage"; //criar
-//import { hideErrorMessage } from "../../helper";
+import {OcultarMsg} from "../../../src/Ajudante/OcultarMsg";
 import LogoHamburger from "../../../src/imagem/hamb.png"; //ok
 import Barbie from "../../../src/imagem/Barbie.png"; //ok
 import Burgers from "../../../src/imagem/Burgers.png"; //ok
@@ -22,21 +22,21 @@ export const Login = () => {
   const btnEntrar = (e) => {
     e.preventDefault();
     loginUsuario(email, password)
-      .then((response) => {
-        if (response.status === 200) {
-          return response.json();
-        }
+      .then((response) => {       
+        if(response.user.role === "atendente") {
+          navigate('/menu')
+        }        
+        if(response.user.role === "chef") {
+          navigate('/kitchen')
+        } 
+        if(response.user.role === "adm") {
+            navigate('/adm')
+        }      
         setErrorMessage(LoginError(response));
       })
-      .then((data) => {
-        if (!data) return;
-        console.log(data.token);
-        setToken(data.token);
-        setRole(data.role);
-        navigate(data.role === "atendente" ? "/menu" : "/kitchen");
-      })
+      
       .catch(() => setErrorMessage(LoginError({ status: 500 })));
-    // hideErrorMessage(setErrorMessage);
+     OcultarMsg(setErrorMessage);
   };
 
   return (

@@ -1,0 +1,145 @@
+
+
+.container-main {
+  background-image: url(../../imagem/FundoBarbie.jpg);  
+  width: 100%;
+  height: 850px; 
+  display: flex;
+  flex-direction: row;  
+}
+
+.menu-section {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../imagem/FundoBarbie.jpg); 
+  
+}
+
+.container-button {
+  display: flex;
+  flex-direction:row;
+  height: 70px;
+  width: 100%;
+  background-color:#fff;
+}
+
+.button-menu {
+  min-width: 184px;
+  height: 50px;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+
+.button-container-left {
+  justify-content: ;
+  margin: 0;
+}
+
+.button-container-right {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.container-menu{
+  width: 100%;
+  height: calc(100vh - var(--header-height) - 70px);
+  overflow: auto;
+ background-color: #ffffffe3;
+}
+
+.container-products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+
+  gap:10px;
+}
+
+.order-aside{
+  width: 30%;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  background-color: var(--bg-antique-white);
+}
+
+.order-section {
+  width:100%;
+  height: 100%;
+}
+
+.order-title {
+  text-align: center;
+  margin: auto;
+  color: var(--orange-dark);
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  color:#E0218A ;
+  background-color: #FACDE5;
+  margin-top: 8px;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  
+}
+
+.inputs-order {
+  display: flex;
+  justify-content:space-evenly;
+  gap:10px;
+  width: 100%;
+  background-color: #FACDE5;
+  border-radius: 15px;
+  margin: 5px;
+  
+}
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  /* overflow: auto; */
+  
+  height: 60%;
+  /* background-color: var(--bg-antique-white); */
+  background-color: #FACDE5;
+  border-radius: 15px;
+  margin-top: 2px;
+}
+
+.button-count-order {
+  width: 25px;
+  height: 25px;
+  background-color: var(--bg-orange);
+  border: none;
+  border-radius: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.total-order-container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;  
+  color: #E0218A;
+  background-color: #FACDE5;
+  border-radius: 15px;
+  margin-top: -25px;
+}
+
+.total-order {
+ background-color: #fff;
+ border-radius: 10px;
+ margin-top: 18px;
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
+ width: 92%;
+ height: 60px;
+ font-weight: bold;
+ border: solid 2px #E0218A;
+ 
+}
